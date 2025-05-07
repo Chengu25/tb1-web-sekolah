@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="O2logo.jpg" alt="Logo Sekolah">
+                <h1>SMA ORANG-ORANGAN</h1>
+            </div>
+            <button class="login-btn" id="loginBtn">Login</button>
+        </div>
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left">Selamat datang di Website Resmi SMA Orang-orangan. Pendaftaran siswa baru tahun ajaran 2050/2051 telah dibuka! Informasi lebih lanjut silahkan hubungi bagian administrasi.</marquee>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul>
+                        <li><a href="#">Sejarah</a></li>
+                        <li><a href="#">Visi & Misi</a></li>
+                        <li><a href="#">Struktur Organisasi</a></li>
+                        <li><a href="#">Fasilitas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Akademik</a>
+                    <ul>
+                        <li><a href="#">Kurikulum</a></li>
+                        <li><a href="#">Kalender Akademik</a></li>
+                        <li><a href="#">Prestasi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Galeri</a></li>
+                <li><a href="#">E-Learning</a></li>
+                <li><a href="#">Buku Tamu</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content">
+            <!-- Slider -->
+            <div class="slider">
+                <div class="slide active" style="background-image: url('/images/sekolah.jpg');">
+                    <div class="slide-content">
+                        <h2>Selamat Datang di Sekolah Orang-Orangan</h2>
+                        <p>Mewujudkan Generasi yang Unggul, Berkarakter, dan Berprestasi</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('/images/fasilitas.jpg');">
+                    <div class="slide-content">
+                        <h2>Fasilitas Lengkap</h2>
+                        <p>Mendukung kegiatan belajar dan mengajar</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('/images/guru.jpg');">
+                    <div class="slide-content">
+                        <h2>Guru Profesional</h2>
+                        <p>Didukung oleh tenaga pendidik yang berpengalaman</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest News -->
+            <div class="news-section">
+                <h2>Berita Terkini</h2>
+                <div class="news-item">
+                    <h3>Peringatan Kemerdekaan RI</h3>
+                    <div class="news-date">17 Agustus 2025</div>
+                    <p>Sekolah Orang-orangan mengadakan Upacara Bendera untuk memperingati Hari Kemerdekaan Republik Indonesia yang ke-80.</p>
+                </div>
+                <div class="news-item">
+                    <h3>-</h3>
+                    <div class="news-date">dd/mm/yyyy</div>
+                    <p>...</p>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <h2>Galeri Kegiatan</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/tik.jpg" alt="Kegiatan Sekolah">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/sains.jpg" alt="Kegiatan Sekolah">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/bd.jpg" alt="Kegiatan Sekolah">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Calendar -->
+            <div class="sidebar-widget">
+                <h2>Kalender Akademik</h2>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th>M</th>
+                            <th>S</th>
+                            <th>S</th>
+                            <th>R</th>
+                            <th>K</th>
+                            <th>J</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="has-event">4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="has-event">9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td class="has-event">19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 10px; font-size: 14px;">Keterangan:</p>
+                <p style="font-size: 14px;">4 - Rapat Guru</p>
+                <p style="font-size: 14px;">9 - Ujian Tengah Semester</p>
+                <p style="font-size: 14px;">19 - Kunjungan Industri</p>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="sidebar-widget">
+                <h2>Pendaftaran Siswa Baru</h2>
+                <form class="registration-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">No. Telepon</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Jenjang</label>
+                        <select id="level" required>
+                            <option value="">-- Pilih Jenjang --</option>
+                            <option value="SD">SD</option>
+                            <option value="SMP">SMP</option>
+                            <option value="SMA">SMA</option>
+                        </select>
+                    </div>
+                    <button type="submit">Daftar Sekarang</button>
+                </form>
+            </div>
+
+            <!-- E-Learning Access -->
+            <div class="sidebar-widget">
+                <h2>Akses E-Learning</h2>
+                <p>Silahkan klik tombol di bawah ini untuk mengakses platform e-learning sekolah.</p>
+                <button style="background-color: #e74c3c; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; margin-top: 10px; cursor: pointer;">Masuk E-Learning</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Links Cepat</h3>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Program Akademik</a></li>
+                    <li><a href="#">Fasilitas</a></li>
+                    <li><a href="#">Berita & Acara</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak Kami</h3>
+                <p>Jl. Orang-Orang No. 123</p>
+                <p>Kota Orang, 12345</p>
+                <p>Telepon: (021) 123-4567</p>
+                <p>Email: info@sekolahO2.ac.id</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f">F</i></a>
+                    <a href="#"><i class="fab fa-twitter">T</i></a>
+                    <a href="#"><i class="fab fa-instagram">I</i></a>
+                    <a href="#"><i class="fab fa-youtube">Y</i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Buku Tamu</h3>
+                <p>Silahkan tinggalkan pesan, saran, atau pertanyaan Anda melalui buku tamu online kami.</p>
+                <button style="background-color: #3498db; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; margin-top: 10px; cursor: pointer;">Buku Tamu Online</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2050 Sekolah Berprestasi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <form class="login-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
