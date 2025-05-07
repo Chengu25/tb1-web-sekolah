@@ -17,15 +17,25 @@ setInterval(nextSlide, 5000);
 
 // Login Modal
 const loginBtn = document.getElementById('loginBtn');
-const modal = document.getElementById('loginModal');
-const closeBtn = document.getElementById('closeModal');
+const loginModal = document.getElementById('loginModal');
+const closeBtnLogin = document.getElementById('closeModalLogin');
+const registBtn = document.getElementById('registBtn');
+const registModal = document.getElementById('registModal');
+const closeBtnRegist = document.getElementById('closeModalRegist');
 
 loginBtn.addEventListener('click', () => {
-    modal.style.display = 'flex';
+    loginModal.style.display = 'flex';
 });
 
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
+closeBtnLogin.addEventListener('click', () => {
+    loginModal.style.display = 'none';
+});
+registBtn.addEventListener('click', () => {
+    registModal.style.display = 'flex';
+});
+
+closeBtnRegist.addEventListener('click', () => {
+    registModal.style.display = 'none';
 });
 
 window.addEventListener('click', (e) => {

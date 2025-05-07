@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Siswa Baru SMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="O2logo.jpg" alt="Logo Sekolah">
+                <h1>SMA ORANG-ORANGAN</h1>
+            </div>
+            <div class="tombol">
+                <button class="login-btn" id=""><a href="regist.html"></a>Regist</button>
+                <button class="login-btn" id="loginBtn">Login</button>
+            </div>
+        </div>
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left">Selamat datang di Website Resmi SMA Orang-orangan. Pendaftaran siswa baru tahun ajaran 2050/2051 telah dibuka! Informasi lebih lanjut silahkan hubungi bagian administrasi.</marquee>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul>
+                        <li><a href="profil.html">Sejarah</a></li>
+                        <li><a href="profil.html">Visi & Misi</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Akademik</a>
+                    <ul>
+                        <li><a href="akademik.html">Kurikulum</a></li>
+                        <li><a href="akademik.html">Kalender Akademik</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="e-learning.html">E-Learning</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>PENDAFTARAN SISWA BARU SMA</h1>
+            <p>Tahun Ajaran 2025/2026</p>
+        </div>
+
+        <div class="section-avatar">
+            <div class="avatar"></div>
+        </div>
+
+        <form id="registrationForm" action="#" method="post">
+            <h3 class="section-title">A. DATA PRIBADI CALON SISWA</h3>
+
+            <div class="form-group">
+                <label for="fullName" class="required">Nama Lengkap</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="birthPlace" class="required">Tempat Lahir</label>
+                        <input type="text" class="form-control" id="birthPlace" name="birthPlace" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="birthDate" class="required">Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Jenis Kelamin</label>
+                <div class="form-check">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Laki-laki</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="religion" class="required">Agama</label>
+                <select class="form-select" id="religion" name="religion" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address" class="required">Alamat Lengkap</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="phone" class="required">No. Telepon/HP</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="bloodType">Golongan Darah</label>
+                        <select class="form-select" id="bloodType" name="bloodType">
+                            <option value="">Pilih Golongan Darah</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                            <option value="unknown">Tidak Tahu</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="nisn" class="required">NISN</label>
+                        <input type="text" class="form-control" id="nisn" name="nisn" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="previousSchool" class="required">Asal Sekolah (SMP/MTs)</label>
+                <input type="text" class="form-control" id="previousSchool" name="previousSchool" required>
+            </div>
+
+            <div class="form-group">
+                <label for="certificateNumber">No. Ijazah SMP/MTs</label>
+                <input type="text" class="form-control" id="certificateNumber" name="certificateNumber">
+            </div>
+
+            <h3 class="section-title">B. DATA ORANG TUA/WALI</h3>
+            
+            <h4 class="section-title">Ayah</h4>
+            <div class="form-group">
+                <label for="fatherName" class="required">Nama Lengkap Ayah</label>
+                <input type="text" class="form-control" id="fatherName" name="fatherName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fatherJob" class="required">Pekerjaan Ayah</label>
+                <input type="text" class="form-control" id="fatherJob" name="fatherJob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fatherPhone" class="required">No. Telepon/HP Ayah</label>
+                <input type="tel" class="form-control" id="fatherPhone" name="fatherPhone" required>
+            </div>
+
+            <h4 class="section-title">Ibu</h4>
+            <div class="form-group">
+                <label for="motherName" class="required">Nama Lengkap Ibu</label>
+                <input type="text" class="form-control" id="motherName" name="motherName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motherJob" class="required">Pekerjaan Ibu</label>
+                <input type="text" class="form-control" id="motherJob" name="motherJob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motherPhone" class="required">No. Telepon/HP Ibu</label>
+                <input type="tel" class="form-control" id="motherPhone" name="motherPhone" required>
+            </div>
+
+            <h4 class="section-title">Wali (jika ada)</h4>
+            <div class="form-group">
+                <label for="guardianName">Nama Lengkap Wali</label>
+                <input type="text" class="form-control" id="guardianName" name="guardianName">
+            </div>
+
+            <div class="form-group">
+                <label for="guardianRelationship">Hubungan dengan Calon Siswa</label>
+                <input type="text" class="form-control" id="guardianRelationship" name="guardianRelationship">
+            </div>
+
+            <div class="form-group">
+                <label for="guardianJob">Pekerjaan Wali</label>
+                <input type="text" class="form-control" id="guardianJob" name="guardianJob">
+            </div>
+
+            <div class="form-group">
+                <label for="guardianPhone">No. Telepon/HP Wali</label>
+                <input type="tel" class="form-control" id="guardianPhone" name="guardianPhone">
+            </div>
+
+            <h3 class="section-title">C. PILIHAN JURUSAN</h3>
+            <div class="form-group">
+                <label class="required">Pilih salah satu jurusan:</label>
+                <div class="form-check">
+                    <input type="radio" id="mipa" name="major" value="mipa" required>
+                    <label for="mipa">MIPA (Matematika dan Ilmu Pengetahuan Alam)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="ips" name="major" value="ips">
+                    <label for="ips">IPS (Ilmu Pengetahuan Sosial)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="bahasa" name="major" value="bahasa">
+                    <label for="bahasa">Bahasa</label>
+                </div>
+            </div>
+
+            <h3 class="section-title">D. NILAI UJIAN NASIONAL SMP/MTs</h3>
+            <div class="form-group">
+                <label for="indonesianScore" class="required">Nilai Bahasa Indonesia</label>
+                <input type="number" min="0" max="100" step="0.01" class="form-control" id="indonesianScore" name="indonesianScore" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mathScore" class="required">Nilai Matematika</label>
+                <input type="number" min="0" max="100" step="0.01" class="form-control" id="mathScore" name="mathScore" required>
+            </div>
+
+            <div class="form-group">
+                <label for="englishScore" class="required">Nilai Bahasa Inggris</label>
+                <input type="number" min="0" max="100" step="0.01" class="form-control" id="englishScore" name="englishScore" required>
+            </div>
+
+            <div class="form-group">
+                <label for="scienceScore" class="required">Nilai IPA</label>
+                <input type="number" min="0" max="100" step="0.01" class="form-control" id="scienceScore" name="scienceScore" required>
+            </div>
+
+            <h3 class="section-title">E. DOKUMEN YANG HARUS DILAMPIRKAN</h3>
+            <div class="form-group">
+                <label for="certificate" class="required">Fotokopi Ijazah SMP/MTs (PDF)</label>
+                <input type="file" class="form-control" id="certificate" name="certificate" accept=".pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="report" class="required">Fotokopi Rapor SMP/MTs semester 1-6 (PDF)</label>
+                <input type="file" class="form-control" id="report" name="report" accept=".pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="familyCard" class="required">Fotokopi Kartu Keluarga (JPG/PNG/PDF)</label>
+                <input type="file" class="form-control" id="familyCard" name="familyCard" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthCertificate" class="required">Fotokopi Akta Kelahiran (JPG/PNG/PDF)</label>
+                <input type="file" class="form-control" id="birthCertificate" name="birthCertificate" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="photo" class="required">Pas foto berwarna ukuran 3x4 (JPG/PNG)</label>
+                <input type="file" class="form-control" id="photo" name="photo" accept=".jpg,.jpeg,.png" required>
+            </div>
+
+            <div class="form-group">
+                <label for="medicalLetter" class="required">Surat Keterangan Sehat dari dokter (JPG/PNG/PDF)</label>
+                <input type="file" class="form-control" id="medicalLetter" name="medicalLetter" accept=".jpg,.jpeg,.png,.pdf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="achievements">Fotokopi Sertifikat Prestasi (jika ada) (JPG/PNG/PDF)</label>
+                <input type="file" class="form-control" id="achievements" name="achievements" accept=".jpg,.jpeg,.png,.pdf" multiple>
+            </div>
+
+            <h3 class="section-title">F. PERNYATAAN</h3>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement" class="required">Saya menyatakan bahwa data yang saya berikan dalam formulir pendaftaran ini adalah benar dan dapat dipertanggungjawabkan. Apabila di kemudian hari terdapat ketidakbenaran data yang saya berikan, saya bersedia menerima konsekuensi sesuai dengan peraturan yang berlaku.</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="reset" class="btn btn-reset">Reset</button>
+                <button type="submit" class="btn">Kirim Pendaftaran</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
